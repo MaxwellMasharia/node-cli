@@ -122,3 +122,73 @@ program
     console.log(`Sum : ${sum}`);
   });
 ```
+
+## **`inquire.js`**
+
+**String Input Type**
+
+```js
+const question = {
+  type: "input",
+  name: "cake_type",
+  message: "What type of cake do you want",
+  default: "vanilla",
+};
+```
+
+**List Input Type**
+
+```js
+const question = {
+  name: "fav_car",
+  message: "What is your favorite car",
+  type: "list",
+  choices: ["bugatti", "benz", "suzuki"],
+};
+```
+
+**Raw List Type**
+
+```js
+const question = {
+  name: "fav_number",
+  message: "What is your favorite number",
+  default: 1,
+  choices: ["one", "two", "three", "four", "five"],
+  type: "rawlist",
+};
+```
+
+**Checkbox Type**
+
+```js
+const question = {
+  name: "fav_number",
+  message: "What is your favorite number",
+  default: ["one", "three"],
+  choices: [{ value: "one" }, { value: "two" }, { value: "three" }],
+  type: "checkbox",
+};
+```
+
+**Confirm**
+
+```js
+const question = {
+  name: "loveMangoes",
+  message: "Do you love mangoes ?",
+  default: false,
+  type: "confirm",
+};
+```
+
+**Password Type**
+
+```js
+const question = {
+  name: "password",
+  message: "What is your password",
+  type: "password",
+  mask: true,
+};
+```
